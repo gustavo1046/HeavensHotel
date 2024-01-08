@@ -11,13 +11,13 @@ nav{
     color: var(--black);
 
     .buttons{
-        width: 60%;
+        width: 70%;
         ul{
             display: flex;
-            gap: 20px;
+            gap: 10%;
             a{
-                width: 25%;
-                height:50px;
+                width: 15%;
+                height: 50px;
                 justify-content: center;
                 align-items: center;
                 display: flex;
@@ -42,6 +42,17 @@ nav{
             font-size: 17px;
         }
     }
+}
 
+@media(max-width: 750px){
+
+    .buttons{
+        width: 90%;
+        ul{
+            a{
+                font-size: 12px;
+            }
+        }
+    }
 }
 

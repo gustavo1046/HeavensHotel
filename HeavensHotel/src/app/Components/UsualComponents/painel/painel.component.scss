@@ -1,6 +1,6 @@
 main{
     background-image: url("../../../../assets/Img/HomePage.jpg");
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -27,11 +27,10 @@ main{
     justify-content: center;
     animation-duration: 3s;
     animation-name: slidein;
-
       
       @keyframes slidein {
         from {
-          margin-left: 40%;
+          margin-left: 90%;
           width: 100%;
         }
 
@@ -40,4 +39,12 @@ main{
           width: 100%;
         }
       }
+}
+
+@media(max-width: 750px){
+    main{
+        .dialog{
+            grid-row: 2; 
+        }
+    }
 }
