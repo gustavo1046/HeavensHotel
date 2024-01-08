@@ -4,4 +4,6 @@ main{
     height: 100vh;
     background-size: cover;
     background-position: center;
+    position: relative;
+    z-index: 1; /* Certifique-se de que a imagem fique abaixo do menu */
 }
