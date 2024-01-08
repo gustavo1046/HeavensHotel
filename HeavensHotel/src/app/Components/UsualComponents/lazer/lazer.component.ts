@@ -8,5 +8,12 @@ import { Component } from '@angular/core';
   styleUrl: './lazer.component.scss'
 })
 export class LazerComponent {
-
+  images = [
+    {url: '../../../../assets/Img/Bar.jpg',
+     alt:"Bar"},
+    {url: '../../../../assets/Img/Pool.jpg',
+    alt:"Piscina"},
+    {url: '../../../../assets/Img/climb.jpg',
+    alt:"Montanha"},
+  ]
 }
