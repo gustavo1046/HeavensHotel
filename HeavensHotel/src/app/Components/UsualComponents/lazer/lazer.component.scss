@@ -2,7 +2,7 @@
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template-columns: (3, 1fr);
+    grid-template-columns: (4, 1fr);
 }
 
 .carrosel-wrap {
@@ -16,7 +16,7 @@
     animation-name: slidein;
     color: var(--white);
     margin-top: 100px;
-    margin-left: 100px;
+    margin-left: 70px;
     font-size: 22px;
 }
 

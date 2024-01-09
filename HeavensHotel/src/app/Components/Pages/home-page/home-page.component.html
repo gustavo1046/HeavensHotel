@@ -1,5 +1,16 @@
-<app-nav></app-nav>
-<app-painel></app-painel>
-<app-restaurante></app-restaurante>
-<app-lazer></app-lazer> 
+
+@defer (on viewport){
+    <app-nav></app-nav>
+    <app-painel></app-painel>
+    <app-restaurante></app-restaurante>
+    <app-lazer></app-lazer> 
+}@placeholder {
+    <section>
+        <h2>Carregando</h2>
+    </section>
+}@error{
+    <section>
+        <h2>Erro ao carregar, por favor, recarregue a pagina</h2>
+    </section>
+}
 
