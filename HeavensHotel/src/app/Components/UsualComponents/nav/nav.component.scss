@@ -1,5 +1,5 @@
 nav{
-    width: 100%;
+    width: 100vw;
     height: 62px;
     display: flex;
     justify-content: center;
@@ -13,7 +13,7 @@ nav{
         width: 70%;
         ul{
             display: flex;
-            gap: 10%;
+            gap: 10%; 
             li{
                 width: 15%;
                 height: 50px;
@@ -21,9 +21,6 @@ nav{
                 align-items: center;
                 display: flex;
                 cursor: pointer;
-                &:hover{
-                    font-size: 17px;
-                }
             }
         }
     }
@@ -37,22 +34,15 @@ nav{
         font-size: 16px;
         font-style: bold;
         border-radius: 7px;
-        &:hover{
-            font-size: 17px;
-        }
     }
 }
 
 @media(max-width: 750px){
-
     .buttons{
         width: 90%;
         ul{
             li{
                 font-size: 11px;
-                &:hover{
-                    font-size: 11px;
-                }
             }
         }
     }

@@ -1,9 +1,16 @@
 
 @defer (on viewport){
     <app-nav></app-nav>
-    <app-painel></app-painel>
-    <app-restaurante></app-restaurante>
-    <app-lazer></app-lazer> 
+    @for (item of ArrayBackgroundImages(); track item) {
+        <main [style.backgroundImage]= "'url(' + item.url + ')'" [style.content]="'item.alt'">
+            <div class="dialog">
+                <div class="Welcome">
+                    <h1> {{ item.h1 }}</h1>
+                    <h2> {{ item.h2 }}</h2>
+                </div>
+            </div>
+        </main>
+    }
 }@placeholder {
     <section>
         <h2>Carregando</h2>
