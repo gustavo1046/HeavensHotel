@@ -20,4 +20,8 @@ export class RestaurantComponent {
       h2: "O melhor da culinária capixaba pra voce"
     }
   )
+
+  onSubmit(){
+    console.log("foi");
+  }
 }

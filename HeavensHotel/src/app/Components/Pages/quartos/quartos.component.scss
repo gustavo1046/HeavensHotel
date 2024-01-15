@@ -1,0 +1,38 @@
+main{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    z-index: 1; /* Certifique-se de que a imagem fique abaixo do menu */
+    display: flex;
+    justify-content: center;
+}
+
+.cards{
+    margin-top: 100px; /* Altura mínima da div */
+    margin-bottom: 40px;
+    width: 94%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    align-items: start; /* Alinha os items no início do contêiner no eixo transversal (eixo Y) */
+    align-content: flex-start; /* Ajuste para garantir que a div cresç*/
+    .card{
+        background-color: rgb(255, 255, 255);
+        width: 90%;
+        height: 180px;
+        border-radius: 8px;
+        align-self: stretch; /* Garante que cada card se estenda por toda a altura da linha */
+        .img{
+           width: 100%;
+           height: 70%;
+           background-color: bisque;     
+        }
+        section{
+            background-color: black;
+            height: 20%;
+            color: azure;
+        }
+    }
+}

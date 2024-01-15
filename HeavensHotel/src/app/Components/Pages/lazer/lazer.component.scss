@@ -1,6 +1,5 @@
 :host{
-    width: 100vw;
-    height: 100vh;
+    margin: 0;
     section{
         width: 100%;
         height: 100%;
@@ -13,25 +12,24 @@
 }
 
 main{
-    width: 100vw;
-    height: 97vh;
+  width: 100vw;
+  height: 100vh;
     background-size: cover;
     background-position: center;
     position: relative;
     z-index: 1; /* Certifique-se de que a imagem fique abaixo do menu */
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .dialog{
     margin-top: 100px;
-    margin-left:15px;
     width: 100%;
     height: 280px;
-    grid-column: 1;
+    grid-column: span 2;
     grid-row: 1; 
     // background-color: #f0f0f0; 
-    color:#f0f0f0;
+    color:#0c0c0c;
     border-radius: 10px;
     text-align: center;
     font-size: 24px;
@@ -40,25 +38,15 @@ main{
     justify-content: center;
     animation-duration: 3s;
     animation-name: slidein;
-      
-      @keyframes slidein {
+
+    @keyframes slidein {
         from {
-          margin-left: 90%;
+          margin-left: 70%;
           width: 100%;
         }
 
         to {
-          margin-left: 15px;
           width: 100%;
-        }
-      }
-}
-
-@media(max-width: 750px){
-    main{
-        .dialog{
-            grid-row: 2; 
         }
     }
 }
-

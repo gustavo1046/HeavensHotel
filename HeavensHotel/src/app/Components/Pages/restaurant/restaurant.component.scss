@@ -61,8 +61,8 @@ main{
   grid-row: 1; 
   form{
     width: 30vw;
-    height:350px;
-    background-color: rgb(255, 255, 255);
+    height:400px;
+    background-color: rgb(243, 243, 243);
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -75,6 +75,15 @@ main{
       border-style:outset;
      }
 
+     button{
+      width: 25%;
+      height: 30px;
+      font-family: poppins, sans-serif;
+      margin-top:20px;
+      background-color: rgb(255, 205, 143);
+      border-radius: 8px;
+      border-style: none;
+     }
   }
 }
 
@@ -104,6 +113,7 @@ main{
     .Reserva{
       form{
         width: 70%;
+        height: 85%;
         margin-top: 100px;
       }
     }
