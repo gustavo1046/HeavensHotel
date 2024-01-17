@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PainelComponent } from './painel.component';
+import { CardDialogComponent } from './card-dialog.component';
 
-describe('PainelComponent', () => {
-  let component: PainelComponent;
-  let fixture: ComponentFixture<PainelComponent>;
+describe('CardDialogComponent', () => {
+  let component: CardDialogComponent;
+  let fixture: ComponentFixture<CardDialogComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [PainelComponent]
+      imports: [CardDialogComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(PainelComponent);
+    fixture = TestBed.createComponent(CardDialogComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

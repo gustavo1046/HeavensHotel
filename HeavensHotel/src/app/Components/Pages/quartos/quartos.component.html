@@ -1,89 +1,12 @@
 <app-nav></app-nav>
 @defer(on viewport){
-    <main [style.backgroundImage]= "'url(' + ArrayBackgroundImages().url + ')'" [style.content]="'ArrayBackgroundImages().alt'">
+    <main [style.backgroundImage]= "'url(' + backgroundImage().url + ')'" [style.content]="'backgroundImage().alt'">
         <div class="cards">
-            <button class="card">
+            <button class="card" (click)="OpenDialog()">
                 <div class="img">
                 </div>
                 <section>
-                    <p>aulau</p>
-                </section>    
-            </button>
-            <button class="card">
-                <div class="img">
-                </div>
-                <section>
-                    <p>aulau</p>
-                </section>    
-            </button>
-            <button class="card">
-                <div class="img">
-                </div>
-                <section>
-                    <p>aulau</p>
-                </section>    
-            </button>
-            <button class="card">
-                <div class="img">
-                </div>
-                <section>
-                    <p>aulau</p>
-                </section>    
-            </button>
-            <button class="card">
-                <div class="img">
-                </div>
-                <section>
-                    <p>aulau</p>
-                </section>    
-            </button>
-            <button class="card">
-                <div class="img">
-                </div>
-                <section>
-                    <p>aulau</p>
-                </section>    
-            </button>
-            <button class="card">
-                <div class="img">
-                </div>
-                <section>
-                    <p>aulau</p>
-                </section>    
-            </button>
-            <button class="card">
-                <div class="img">
-                </div>
-                <section>
-                    <p>aulau</p>
-                </section>    
-            </button>
-            <button class="card">
-                <div class="img">
-                </div>
-                <section>
-                    <p>aulau</p>
-                </section>    
-            </button>
-            <button class="card">
-                <div class="img">
-                </div>
-                <section>
-                    <p>aulau</p>
-                </section>    
-            </button>
-            <button class="card">
-                <div class="img">
-                </div>
-                <section>
-                    <p>aulau</p>
-                </section>    
-            </button>
-            <button class="card">
-                <div class="img">
-                </div>
-                <section>
-                    <p>aulau</p>
+                    <p></p>
                 </section>    
             </button>
         </div>
