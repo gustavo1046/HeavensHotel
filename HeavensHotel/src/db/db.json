@@ -1,0 +1,28 @@
+{
+  "quartos": [
+    {
+        "id": "1",
+        "titulo": "Suite para casal",
+        "descricao": "Quarto com cama de casal, banheiro, vista para a floresta na parte superior do Heavens, perfeito para casais",
+        "url": "../../../../assets/Img/suiteCasal.jpg"
+    },
+    {
+        "id": "2",
+        "titulo": "Suite de solteiro",
+        "descricao": "Quarto com cama de casal, banheiro, vista para a floresta na parte superior do Heavens, perfeito para casais",
+        "url": "../../../../assets/Img/suiteCasal.jpg"
+    },
+    {
+        "id": "3",
+        "titulo": "Quarto completo de Casal",
+        "descricao": "Quarto com cama de casal, banheiro, cozinha, varanda. O melhor do conforto para voce",
+        "url": "../../../../assets/Img/suiteCasal.jpg"
+    },
+    {
+        "id": "4",
+        "titulo": "Quarto Duplo",
+        "descricao": "Quarto com duas camas de casal, banheiro. Quarto ideal para o descanso da sua familia",
+        "url": "../../../../assets/Img/suiteCasal.jpg"
+    }
+  ]
+}

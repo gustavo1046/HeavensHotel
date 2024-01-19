@@ -2,13 +2,16 @@
 @defer(on viewport){
     <main [style.backgroundImage]= "'url(' + backgroundImage().url + ')'" [style.content]="'backgroundImage().alt'">
         <div class="cards">
-            <button class="card" (click)="OpenDialog()">
-                <div class="img">
-                </div>
-                <section>
-                    <p></p>
-                </section>    
-            </button>
+            @for (quarto of Quartos; track quarto) {
+                <button class="card" (click)="OpenDialog()">
+                    <div class="img">
+                        <img [src] ="quarto.url"/>
+                    </div>
+                    <section>
+                        <p>{{ quarto.titulo }}</p>
+                    </section>    
+                </button>
+            }
         </div>
     </main>
 }@placeholder {

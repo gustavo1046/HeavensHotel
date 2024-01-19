@@ -1,5 +1,6 @@
 main{
     min-height: 100vh;
+    width: 100%;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -12,7 +13,7 @@ main{
     width: 94%;
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 250px));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 15px;
     align-items: start; /* Alinha os items no início do contêiner no eixo transversal (eixo Y) */
     align-content: flex-start; /* Ajuste para garantir que a div cresç*/
@@ -27,12 +28,24 @@ main{
            height: 70%;
            background-color: bisque;     
            border-radius: 8px;
+
+            img{
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                background-position: center;
+                border-radius: 5px;
+            }
         }
         section{
+            margin-top: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             background-color: black;
             height: 20%;
             color: azure;
-            border-radius: 8px;
+            border-radius: 5px;
         }
     }
 }

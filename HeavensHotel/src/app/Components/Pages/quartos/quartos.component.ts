@@ -4,6 +4,7 @@ import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { CardDialogComponent } from '../../UsualComponents/dialog/card-dialog/card-dialog.component';
 import { BackgroundImages } from '../../../Interfaces/IbackgroundImages';
 import { Quarto } from '../../../Interfaces/Iquartos';
+import { QuartoService } from '../../../Services/quarto.service';
 
 @Component({
   selector: 'app-quartos',
@@ -13,13 +14,21 @@ import { Quarto } from '../../../Interfaces/Iquartos';
   styleUrl: './quartos.component.scss'
 })
 export class QuartosComponent implements OnInit{
+  
+  public Quartos: Quarto[] | undefined;
+  
   constructor(
-    public dialog: MatDialog
+    public dialog: MatDialog,
+    private quartoService: QuartoService
   ){
-
+    
   }
 
-  ngOnInit(): void {
+  ngOnInit(): void{
+    this.quartoService.obterTodosQuartos().subscribe((data) => {
+      this.Quartos = data;
+      console.log(this.Quartos);
+    });
   }
 
   backgroundImage = signal<BackgroundImages>(
@@ -31,15 +40,6 @@ export class QuartosComponent implements OnInit{
       h2: "O lugar onde voce encontra descanso"
     })
 
-  ArrayQuartos = signal<Quarto>(
-    {
-      titulo: "Suite de casal",
-      descricao: "Quarto com cama de casal, banheiro, vista para a floresta na parte superiorn do Heavens, perfeito para casais",
-      url: "../../../../assets/Img/suiteCasal.jpg"
-    }
-  )
-
-
   OpenDialog(): void {
     const dialogRef = this.dialog.open(CardDialogComponent, {
     });
@@ -49,4 +49,5 @@ export class QuartosComponent implements OnInit{
     });
   }
 
+  //services
 }
