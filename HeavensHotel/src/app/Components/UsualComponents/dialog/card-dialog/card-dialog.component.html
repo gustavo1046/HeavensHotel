@@ -1,7 +1,10 @@
-<h2 mat-dialog-title></h2>
-<mat-dialog-content class="mat-typography">
-  <img/>
-</mat-dialog-content>
-<mat-dialog-actions align="end">
-  <p></p>
-</mat-dialog-actions>
+<div class="titulo">
+  <h2>{{ getData()?.titulo }}</h2>
+</div>
+
+<div class="imagem">
+  <img [src]="getData()?.url">
+</div>
+<div class="descricao">
+  <p>{{ getData()?.descricao }}</p>
+</div>

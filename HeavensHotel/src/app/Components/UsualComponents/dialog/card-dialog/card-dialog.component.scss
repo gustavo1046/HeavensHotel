@@ -1,3 +1,27 @@
-[mat-dialog-content]{
-    background-color: aqua;
+.titulo{
+    text-align: center;
 }
+
+.imagem{
+    img{
+        height: 100%;
+        width: 97%;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.descricao{
+    display: flex;
+    justify-content: center;
+    p{
+        width:95%
+    }
+}
+

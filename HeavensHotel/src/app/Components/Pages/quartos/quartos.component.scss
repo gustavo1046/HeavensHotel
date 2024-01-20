@@ -13,7 +13,7 @@ main{
     width: 94%;
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(220px, 0.7fr));
     gap: 15px;
     align-items: start; /* Alinha os items no início do contêiner no eixo transversal (eixo Y) */
     align-content: flex-start; /* Ajuste para garantir que a div cresç*/
@@ -26,7 +26,6 @@ main{
         .img{
            width: 100%;
            height: 70%;
-           background-color: bisque;     
            border-radius: 8px;
 
             img{
@@ -42,10 +41,15 @@ main{
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: black;
             height: 20%;
-            color: azure;
             border-radius: 5px;
+            font-family: Poppins, sans-serif;
+            font-size: 14px;
+        }
+
+        &:hover{
+            box-shadow: 2px 3px 7px white;
+            cursor: pointer;
         }
     }
 }

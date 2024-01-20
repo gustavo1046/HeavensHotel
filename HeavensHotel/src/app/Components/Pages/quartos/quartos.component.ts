@@ -40,8 +40,9 @@ export class QuartosComponent implements OnInit{
       h2: "O lugar onde voce encontra descanso"
     })
 
-  OpenDialog(): void {
+  OpenDialog(data: Quarto): void {
     const dialogRef = this.dialog.open(CardDialogComponent, {
+      data
     });
 
     dialogRef.afterClosed().subscribe(result => {

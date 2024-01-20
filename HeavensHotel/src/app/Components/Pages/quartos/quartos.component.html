@@ -3,7 +3,7 @@
     <main [style.backgroundImage]= "'url(' + backgroundImage().url + ')'" [style.content]="'backgroundImage().alt'">
         <div class="cards">
             @for (quarto of Quartos; track quarto) {
-                <button class="card" (click)="OpenDialog()">
+                <button class="card" (click)="OpenDialog(quarto)">
                     <div class="img">
                         <img [src] ="quarto.url"/>
                     </div>
