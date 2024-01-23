@@ -19,13 +19,13 @@ export class HomePageComponent{
       h1: "Bem vindo ao Heavens",
       h2: "O lugar onde voce encontra descanso"
     },
-    {
-      titulo: "Restaurante",
-      url: "../../../../assets/Img/Restaurant.jpg",
-      alt: "Restaurante Heavens",
-      h1: "Aqui voce encontra o melhor da culinária capixaba",
-      h2: "Venha conferir!"
-    },
+    // {
+    //   titulo: "Restaurante",
+    //   url: "../../../../assets/Img/Restaurant.jpg",
+    //   alt: "Restaurante Heavens",
+    //   h1: "Aqui voce encontra o melhor da culinária capixaba",
+    //   h2: "Venha conferir!"
+    // },
     // {
     //   titulo: "Restaurante",
     //   url: "../../../../assets/Img/Restaurant.jpg",

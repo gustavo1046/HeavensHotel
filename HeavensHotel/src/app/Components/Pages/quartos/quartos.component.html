@@ -1,5 +1,5 @@
-<app-nav></app-nav>
 @defer(on viewport){
+    <app-nav></app-nav>
     <main [style.backgroundImage]= "'url(' + backgroundImage().url + ')'" [style.content]="'backgroundImage().alt'">
         <div class="cards">
             @for (quarto of Quartos; track quarto) {

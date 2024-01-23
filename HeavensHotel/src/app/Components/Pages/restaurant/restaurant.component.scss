@@ -62,7 +62,7 @@ main{
   form{
     width: 30vw;
     height:400px;
-    background-color: rgb(243, 243, 243);
+    background-color: var(--luz);
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -76,11 +76,11 @@ main{
      }
 
      button{
-      width: 25%;
+      width: 35%;
       height: 30px;
       font-family: poppins, sans-serif;
       margin-top:20px;
-      background-color: rgb(255, 205, 143);
+      background-color: var(--principal);
       border-radius: 8px;
       border-style: none;
      }

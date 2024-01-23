@@ -5,10 +5,8 @@ nav{
     justify-content: center;
     align-items: center;
     position: fixed;
-    background-color: var(--white);
+    background-color: transparent;
     z-index: 1000; 
-    color: var(--black);
-
     .buttons{
         width: 70%;
         ul{
@@ -21,25 +19,32 @@ nav{
                 align-items: center;
                 display: flex;
                 cursor: pointer;
+                a{
+                    text-decoration: none;
+                    color: var(--luz);
+                }           
             }
         }
     }
     button{
         margin-left: auto;
-        width: 7rem;
-        height:50px;
+        width: 9rem;
+        height: 40px;
         border-style: none;
         margin-right: 20px;
-        background-color:rgb(250, 193, 122);
+        background-color: var(--principal);
+        color: (--sombra);
         font-size: 16px;
         font-style: bold;
-        border-radius: 7px;
+        cursor: pointer;
+        border-radius: 30px;
     }
+
 }
 
 @media(max-width: 750px){
     .buttons{
-        width: 90%;
+        width: 50%;
         ul{
             li{
                 font-size: 11px;
