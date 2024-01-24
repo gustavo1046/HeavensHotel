@@ -22,11 +22,16 @@ nav{
                 a{
                     text-decoration: none;
                     color: var(--luz);
+                    transition: font-size 0.1s;
+                    &:hover{
+                        font-size: 1em;
+                    }
                 }           
             }
         }
     }
     button{
+        font-family: Montserrat, sans-serif;
         margin-left: auto;
         width: 9rem;
         height: 40px;
@@ -38,6 +43,7 @@ nav{
         font-style: bold;
         cursor: pointer;
         border-radius: 30px;
+        opacity: 80%;
     }
 
 }
@@ -50,6 +56,10 @@ nav{
                 font-size: 11px;
             }
         }
+    }
+
+    button{
+        width: 20px;
     }
 }
 

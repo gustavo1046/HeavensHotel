@@ -14,7 +14,7 @@ export class HomePageComponent{
   ArrayBackgroundImages = signal<BackgroundImages[]>([
     {
       titulo: "Hotel",
-      url: "../../../../assets/Img/HomePage.jpg",
+      url: "../../../../assets/Img/HomePage2.jpg",
       alt: "Heavens Hotel",
       h1: "Bem vindo ao Heavens",
       h2: "O lugar onde voce encontra descanso"
